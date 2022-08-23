@@ -1,0 +1,10 @@
+console.log('hello')
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+function toggleMenu(){
+    const menuToggle = document.querySelector(".menuToggle");
+    menuToggle.classList.toggle('active');
+}
